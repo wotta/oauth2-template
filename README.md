@@ -6,7 +6,14 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/wotta/oauth2-template.svg?style=flat-square)](https://scrutinizer-ci.com/g/wotta/oauth2-template)
 [![Total Downloads](https://img.shields.io/packagist/dt/wotta/oauth2-template.svg?style=flat-square)](https://packagist.org/packages/wotta/oauth2-template)
 
-This package provides Github OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
+This package provides Custom Provider OAuth 2.0 support for the PHP League's [OAuth 2.0 Client](https://github.com/thephpleague/oauth2-client).
+
+## How to use
+
+In order to correctly use this template repository you will need to go through the code and update all references from `Custom` to `YourProvider`. This is not meant to be installed as a standalone package.
+
+This is merely being provided as a basic starter point since there was no easy to use one yet.
+In the future additions will be added to make it even more simple.
 
 ## Installation
 
@@ -18,7 +25,7 @@ composer require league/oauth2-template
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\League\OAuth2\Client\Provider\Github` as the provider.
+Usage is the same as The League's OAuth client, using `\Wotta\OAuth2\Client\Provider\CustomProvider` as the provider.
 
 ### Authorization Code Flow
 
